@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now</title>
+
+</head>
+
+<body>
+    <%- include("./common/header.ejs") %>
+
+
+
+        <!-- login form start---------------------------------------- -->
+        <div class="container mb-5">
+            <center>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                
+
+                    <!-- normal form start -->
+
+                    <div class="container-fluid mt-3 py-3">
+                        <h1 class="text-center">Apply now </h1>
+                        <form method="post" action="/applynow">
+
+
+
+                            <label class="mt-3"><img src="/icons/user.png" style="width:35px; height:35px;">
+                                <h5>First Name:</h5>
+                            </label>
+                            <input autocomplete="on" type="text" class="form-control" id="name"
+                                placeholder="Enter The User Name" name="name">
+
+
+
+
+
+                            <label class="mt-3"  for="email"><img src="/icons/mail.png" style="width:30px; height:30;">
+                                <h5>Enter Email ID:</h5>
+                            </label>
+                            <input autocomplete="on" type="email" class="form-control" id="email"
+                                placeholder="Enter your Email address" name="email">
+
+
+
+
+
+                            <label class="mt-3"  for="pwd"><img src="/icons/pass.png" style="width:30px; height:30;">
+                                <h5>Password:</h5>
+                            </label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                name="password">
+
+
+
+
+                            <label class="mt-3"  for="pwd"><img src="/icons/pass.png" style="width:30px; height:30;">
+                                <h5>Confirm Password:</h5>
+                            </label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Confirm  password"
+                                name="cpassword">
+
+
+
+                            <label class="mt-3" for="number"><img src="/icons/phone.png" style="width:30px; height:30;">
+                                <h5>Enter Contact Number:</h5>
+                            </label>
+                            <input type="number" class="form-control" id="phone" placeholder="Enter your 10 digit +91 phone Number"
+                                name="number">
+
+
+                            
+                                <label class="mt-3" for="Address"><img src="/icons/address.png" style="width:30px; height:30;">
+                                    <h5>Address:</h5>
+                                </label>
+                                <input type="text" class="form-control" id="Address" placeholder="Enter your full address"
+                                    name="address">    
+
+
+
+
+                            <label class="mt-3"for="Choose File"><img src="/icons/upload.jpg" style="width:30px; height:30;">
+                                <h5>Upload Your CV*:</h5>
+                            </label><input class="form-control" id="choose" type="file" name="file">
+
+
+                            
+                            <label class="mt-3"for="select"><img src="/icons/gendar.jpg" style="width:38px; height:40px;">
+                            <h5>Select Gender:</h5></label><br>
+                            Male<input type="radio" name="r1"value="male">
+                            Female<input type="radio" name="r1"value="Female"><br>
+
+
+
+                              
+                            <label class="mt-3" for="select"><img src="/icons/education.png" style="width:38px; height:35px;">
+                                <h5>Select Education:</h5></label><br>                  
+                            <select name="education" type="select" id="Education">
+                                <option >Not Selected:</option>
+                                <option >10th class passed</option>
+                                <option >12th class passed</option>
+                                <option > Graduate in B.A Proggrame</option>
+                                <option >BCA </option>
+                                <option >B.tech </option>
+
+                            </select>
+                    
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+            <div class="form-check mb-3 ms-5 text-center">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember">Remember me</label>
+            </div>
+            <center>
+            <button type="submit" class="btn btn-primary ms-5">Submit</button>
+        </center>
+            </form>
+        </div>
+
+        </form>
+        </div>
+        </div>
+    </center>
+
+        <!-- login form end---------------------------------------------------------->
+
+
+        <%- include("./common/footer.ejs") %>
+
+        
+</body>
+
+</html>

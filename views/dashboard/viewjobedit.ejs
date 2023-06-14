@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view job edit</title>
+</head>
+<body>
+
+    <%- include("./header.ejs") %>
+
+    <div class="container">
+        <h1>view jobs Edit</h1>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <%- include("./left.ejs") %>
+                </div>
+
+
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                   <form method="post">
+
+                    <div class="mb-3 mt-3">
+                        <label for="text" class="form-label">Job location:</label>
+                        <input type="text" class="form-control"  placeholder="Enter location here"
+                        value="<%= data.location%>"  name="location">
+                    </div>
+
+
+                    <div class="mb-3 mt-3">
+                        <label for="text" class="form-label">Post:</label>
+                        <input type="text" class="form-control" placeholder="Enter post here"
+                        value="<%= data.post%>"  name="post">
+                    </div>
+
+
+                    <div class="mb-3 mt-3">
+                        <label for="text" class="form-label">Enter job details:</label>
+                        <input type="text" class="form-control"  placeholder="Enter details here"
+                        value="<%= data.details%>"  name="details">
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <label for="text" class="form-label"></label>
+                        <input type="text" class="form-control"  placeholder="Enter qulification"
+                        value="<%= data.quelification%>"  name="quelification">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="mt-3" for="Choose File">
+                            <h5>Attache File*:</h5>
+                        </label><input class="form-control" type="file"  value="<%= data.file%>" name="file">
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <label class="mt-3" for="Choose File">
+                            <h5>Description*:</h5>
+                        </label><input class="form-control" type="text"  value="<%= data.description%>" name="description">
+                    </div>
+
+
+                    <div class="form-check mb-3">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+   
+                    </div>
+    
+
+    </div>    
+</body>
+</html>

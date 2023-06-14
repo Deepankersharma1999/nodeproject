@@ -1,0 +1,214 @@
+#placements
+{font-family:inherit;
+ color: rgb(136, 134, 2);
+
+}
+
+
+#numcolor
+{
+font-size:30px;font-family: Georgia, 'Times New Roman', Times, serif;
+
+color: brown;
+} 
+
+
+#about
+{
+    color:rgba(5, 172, 214, 0.644);
+}
+
+
+#commpanies
+{
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+/* transiton about us  1st page  gallry--------------------  */
+
+.img{
+    transition: .2s ;
+    cursor: grab;
+    
+    }
+    
+    .siximg:hover img{
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .siximg:hover{
+        transform: scale(0.9,0.9);
+    }
+    /* transiton 1st page and cars gallry   end--------------------  */
+    
+
+
+  
+/* Footer all pages start */
+.footer {
+	background-color: #111;
+	color: white;
+	padding: 40px 0;
+  }
+  
+  .footer h5 {
+	font-size: 20px;
+	font-family: calibri;
+	margin-bottom: 20px;
+  }
+  
+  .footer p {
+	font-size: 14px;
+	font-family: calibri;
+  }
+  
+  .footer ul li a {
+	color: grey;
+	font-size: 14px;
+	font-family: calibri;
+	text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+	color: white;
+  }
+  
+  .fa {
+	display: inline-block;
+	padding: 10px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 100px;
+	margin-right: 10px;
+  }
+  
+  .fa:hover {
+	opacity: 0.7;
+	text-decoration: none;
+  }
+  
+  .fa-facebook {
+	background: #3b5998;
+	color: white;
+  }
+  
+  .fa-twitter {
+	background: #55acee;
+	color: white;
+  }
+  
+  .fa-google {
+	background: #dd4b39;
+	color: white;
+  }
+  
+  .fa-youtube {
+	background: #bb0000;
+	color: white;
+  }
+  
+  .dev {
+	font-size: 14px;
+  }
+  
+  .dev a {
+	text-decoration: none;
+	color: Skyblue;
+  }
+  
+  .image-wrapper {
+	position: relative;
+  }
+  
+  .text-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 14px;
+	color: black;
+	font-weight: bolder;
+	text-align: center;
+	font-family: calibri;
+  }
+  
+  .image-button-container {
+	position: relative;
+  }
+  
+  .image-button {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	background-color: #fff;
+	color: #000;
+	border: none;
+	border-radius: 50px;
+	padding: 8px 10px;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: pointer;
+  }
+  
+  .image-button-center {
+	position: absolute;
+	top: 50%;
+	left: 46%;
+	background-color: #fff;
+	color: #000;
+	border: none;
+	border-radius: 50px;
+	padding: 8px 10px;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: pointer;
+  }
+  
+  .image-button:hover,
+  .image-button-center:hover {
+	background-color: #000;
+	color: #fff;
+  }
+
+/*footer all pages end*/
+
+
+/* .modal-content {
+	background-color: #fff;
+	border-radius: 10px;
+	font-size: 1.2rem;
+  }
+  
+  .modal-header, .modal-body {
+	border-bottom: none;
+  }
+  
+  .modal-header .btn-close {
+	color: #000;
+  }
+  
+  .btn-primary {
+	background-color: #6c63ff;
+	border: none;
+	border-radius: 20px;
+  }
+  
+  .btn-primary:hover {
+	background-color: #5b53e6;
+  }
+
+
+   */
+
+
+.sometext
+{
+	color:rgba(243, 239, 13, 0.473);
+	
+}

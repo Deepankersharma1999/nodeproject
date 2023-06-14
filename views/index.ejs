@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindJobs.com</title>
+
+</head>
+
+<body>
+    <%- include("./common/header.ejs") %>
+
+        <!-- first img job opprtunites -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <center>
+                    <img src="/images/jobop.png" style="width:40%;">
+                </center>
+                </div>
+            </div>
+        </div>
+        <!-- first img job opprtunites -->
+
+
+
+
+
+        <!-- go to job offers page -->
+        <div class="container">
+            <div class="row text-center">
+                <h1>Good Life Begins With A Good Company.</h1>
+
+
+                <div class="col-lg-6 m-auto mt-5">
+                    <h3>Are You Looking For Job or Job Change Right Now??</h3>
+
+                    <a class="btn btn-primary mt-3" href="http://localhost:2003/jobs" role="button">Click Here</a><br>
+                    <img src="/icons/arrowup.gif"style="height:80px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- go to job offers page -->
+
+
+
+
+        <!-- jobs type display -->
+        <div class="container-fluid">
+            <h1 class="text-center sometext">Some Opportunities</h1>
+            <% if (data.length>0){%>
+                
+            <div class="row m-auto text-center mt-5 ">
+                <% for(var i=0; i<data.length; i++){%>
+                <div class="col-lg-3 col-md-3 col-sm-3 mt-5 mb-5">
+                    <div class="card"><img src="<%= data[i].products%>" style="height: 200px;">
+                    </div>
+                    <div class="card-body">
+                        <h5><%= data[i].location%></h5><br>
+                        <b><%= data[i].post%></b><br>
+                        <b><%= data[i].details%></b><br>
+                        <b><%= data[i].quelification%></b><br>
+                        <b><%= data[i].products%></b><br>
+                        <p><%= data[i].description%></p><br>
+                        <a class="btn btn-primary" href="" role="button">Apply Now</a>
+
+                    </div>
+                </div>
+
+                <%}%>
+        <%}else{%>
+            not record found
+
+            <%} %>
+
+<!-- 
+                <div class="col-lg-3 col-md-3 col-sm-3 mt-5 mb-5 siximg img">
+                    <div class="card"> <img src="/images/builder.webp" style="height: 200px;">
+                    </div>
+                    <div class="card-body">
+                        <h5>Builders and RK-tech</h5>
+                        <a class="btn btn-primary" href="http://localhost:2003/applynow" role="button">Apply Now</a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-3 col-sm-3 mt-5 mb-5 siximg img">
+                    <div class="card"><img src="/images/security_guardjob.webp" style="height: 200px;">
+                    </div>
+                    <div class="card-body">
+                        <h5>Security Guard</h5>
+                        <a class="btn btn-primary" href="http://localhost:2003/applynow" role="button">Apply Now</a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-3 col-sm-3 mt-5 siximg img">
+                    <div class="card"><img src="/images/warehouse_logistics.webp" style="height: 200px;">
+                    </div>
+                    <div class="card-body">
+                        <h5>Logistic Commpanies</h5>
+                        <a class="btn btn-primary" href="http://localhost:2003/applynow" role="button">Apply Now</a>
+                    </div>
+
+                </div>-->
+ 
+            </div>
+        </div>
+
+        
+
+        <!-- jobs type display -->
+
+
+
+
+
+        <%- include("./common/footer.ejs") %>
+
+</body>
+
+</html>

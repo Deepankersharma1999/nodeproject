@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <%- include("./common/header.ejs") %>
+
+        <!-- contact us left side starting text start -->
+        <div class="container mt-5">
+            <div class="row">
+
+
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <img src="/images/yellow-mail-icon.png">
+                    <h1>Contact Us</h1>
+                    <p>Have questions? We’re here to help!</p>
+
+                    <p>Fill out the form and we’ll get in touch as soon as we can.<br>
+                        We look forward to hearing from you.</p>
+                </div>
+
+
+
+                <div class="col-lg-6 col-md-6 col-sm-6">
+
+                    <form method="post" action="/contact">
+                        <label class="mt-3" for="email"><img src="/icons/mail.png" style="width:30px; height:30;">
+                            <h5>Enter Email ID:</h5>
+                        </label>
+
+
+                        <input autocomplete="on" type="email" class="form-control" id="email"
+                            placeholder="Enter your Email address" name="email">
+
+
+
+
+                        <label class="mt-3"><h5>Subject:</h5></label>
+                        <input type="subject" class="form-control mb-2" placeholder="Enter Your Subject"   name="subject">
+
+            
+                        <button type="submit" class="btn btn-primary ms-5">Sent us</button>
+
+
+
+                    </form>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+        <!-- send us mail content end-->
+
+
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <center>
+                    <img src="/icons/contactus.jpg" style="width:20%;">
+                </center>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <%- include("./common/footer.ejs") %>
+
+
+</body>
+
+</html>

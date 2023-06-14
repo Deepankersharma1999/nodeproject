@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <%- include("./common/header.ejs") %>
+        <div class="container mt-5">
+            <div class="row">
+                      
+                <div class="col-lg-5 col-md-5 col-sm-5 m-auto bg-cyan border-3"style="height:350px;">
+                <!-- Login form goes here -->
+                <h1 class="text-secondary">Login</h1>
+
+                <form method="post" action="/login">
+
+
+
+
+                    <div class="mb-1">
+                        <label for="email" class="form-label">Email address:</label>
+                        <input type="email" name="email" class="form-control"placeholder="Enter your Email Address">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control" placeholder="Enter your Password">
+                        <div id="emailHelp" class="form-text">We'll never share your email or Password with anyone else.</div>
+                    </div>
+
+                    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                   
+                </form>
+
+                <!-- login form goes here end -->
+                </div>
+            </div>
+        </div>
+
+
+
+        <%- include("./common/footer.ejs") %>
+</body>
+
+</html>

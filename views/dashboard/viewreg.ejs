@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Registration</title>
+</head>
+
+<body>
+    
+    <h1>VIEW Registration Data</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <%- include("./left.ejs") %>
+                </div>
+                
+                <div class="col-lg-12  col-md-12 col-sm-12 bg-secondary mt-5">
+                    <% if(data.length>0){%>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">id</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Password</th>
+                                <th scope="col">Phone Number</th>
+                                <th scope="col">pincode</th>
+                                <th scope="col">Action</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for (var i=0; i<data.length; i++){%>
+                            <tr>
+                                <!-- <th scope="row">1</th> -->
+
+                                <td><%= i %></td>
+                                <td><%= data [i].uname%></td>
+                                <td><%= data [i].email%></td>
+                                <td><%= data [i].pass%></td>
+                                <td><%= data [i].pnumber%></td>
+                                <td><%= data [i].pincode%></td>
+                                <td>
+                                    <button class="btn btn-outline-success">
+                                        <a class="text-dark" href="/edit_3/<%= data[i]._id %>">EDIT</a>
+                                    </button>
+
+                                    <button class="btn btn-success">
+                                        <a class="text-dark" href="/delete/<%= data[i]._id %>">DELETE</a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <%}%>
+                        </tbody>
+                    </table>
+
+
+                    <%}else {%>
+                    no Record found
+                     <%}%>
+
+            </div>
+                
+        </div>
+
+
+       
+</body>
+
+</html>

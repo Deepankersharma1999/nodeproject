@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+</head>
+
+<body>
+
+    <%- include("./header.ejs") %>
+        <h1>Show contacts page</h1>
+        <div class="col-lg-4">
+            <%- include("./left.ejs") %>
+        </div>
+        
+
+        <div class="col-lg-12  col-md-12 col-sm-12  mt-5">
+
+            
+            <form method="post" >
+                
+                <label class="mt-3" for="email"><img src="/icons/mail.png" style="width:30px; height:30;">
+                    <h5>Enter Email ID:</h5>
+                </label>
+                <input autocomplete="on" type="email" class="form-control" id="email"
+                    placeholder="Enter your Email address" value="<%= data.email %>" name="email">
+
+
+
+
+                <label class="mt-3"><h5>Subject:</h5></label>
+                <input type="subject" class="form-control mb-2" placeholder="Enter Your Subject"  value="<%= data.subject%>" name="subject">
+
+    
+                <button type="submit" class="btn btn-primary ms-5">Sent us</button>
+
+
+
+            </form>
+            </div>
+
+
+
+
+
+</body>
+
+</html>

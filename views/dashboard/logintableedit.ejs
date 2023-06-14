@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login table edit</title>
+</head>
+<body>
+    <%- include("./header.ejs")%>
+    <div class="container">
+        <h1>LOGIN EDIT TABLE</h1>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <%- include("./left.ejs")%>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <div class="row">
+                  
+            <div class="col-lg-5 col-md-5 col-sm-5 m-auto bg-cyan border-3"style="height:350px;">
+            <!-- Login form goes here -->
+            <h1 class="text-secondary">Login</h1>
+
+            <form method="post">
+
+
+                <div class="mb-1">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" value="<%= data.name%>" name="name" class="form-control"placeholder="Enter your User Name">
+                </div>
+
+
+                <div class="mb-1">
+                    <label for="email" class="form-label">Email address:</label>
+                    <input type="email" value="<%= data.email%>" name="email" class="form-control"placeholder="Enter your Email Address">
+                </div>
+
+
+                <div class="mb-1">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="text" value="<%= data.password%>" name="password" class="form-control" placeholder="Enter your Password">
+                    <div id="emailHelp" class="form-text">We'll never share your email or Password with anyone else.</div>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+               
+            </form>
+
+            <!-- login form goes here end -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

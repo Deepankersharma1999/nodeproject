@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View jobs</title>
+</head>
+
+<body>
+    <%- include("./header.ejs")%>
+    <h1>Apply Now Table</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <%- include("./left.ejs")%>
+                </div>
+
+
+
+
+                <div class="col-lg-12  col-md-12 col-sm-12 bg-secondary mt-5">
+                    <% if(data.length>0){%>                    
+                        <table class="table">
+                        <thead>
+                           
+                            <tr>
+                                <th scope="col">id</th>
+                                <th scope="col">Name:</th>
+                                <th scope="col">Email:</th>
+                                <th scope="col">password</th>
+                                <th scope="col">confirm password</th>
+                                <th scope="col">Number</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">File</th>
+                                <th scope="col">Gendar</th>
+                                <th scope="col">Education</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                     <% for (var i=0; i<data.length; i++){%>
+                            <tr>
+                                <!-- <th scope="row">1</th> -->
+                                <td><%=  i %></td>
+                                <td><%= data [i].name%></td>
+                                <td><%= data [i].email%></td>
+                                <td><%= data [i].password%></td>
+                                <td><%= data [i].cpassword%></td>
+                                <td><%= data [i].number%></td>
+                                <td><%= data [i].address%></td>
+                                <td><%= data [i].products%></td>
+                                <td><%= data [i].r1%></td>
+                                <td><%= data [i].education%></td>
+                                
+                                <td>
+                                    <button class="btn btn-outline-success">
+                                    <a class="text-dark" href="/edit_2/<%= data[i]._id %>">EDIT</a>
+                                </button>
+
+                                <button class="btn btn-success">
+                                    <a class="text-dark" href="/delete_apply/<%= data[i]._id %>">DELETE</a>
+                                </button>                              
+                             </td>
+                            </tr>
+                            <%}%>
+                        </tbody>
+                    </table>
+                    <%}else {%>
+                        no Record found
+                         <%}%>
+            </div>
+        </div>
+       
+
+</body>
+
+</html>
